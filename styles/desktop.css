@@ -1,0 +1,101 @@
+:root {
+  /* Fuente */
+  --fuentePrincipal: "Figtree", sans-serif;
+
+  /* Principal */
+  --Yellow: hsl(47, 88%, 63%);
+  /* Secundarios */
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--fuentePrincipal);
+  font-size: 1.6rem;
+  margin: auto;
+}
+
+/* Globales */
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+/* Card */
+.container {
+  min-height: 100vh;
+  background-color: var(--Yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 8px 8px 8px 8px;
+  width: 45rem;
+  height: 60rem;
+  background-color: var(--White);
+  border-radius: 5%;
+  padding: 2.7rem;
+  border: 0.1rem solid black;
+  box-shadow: 8px 8px 0 2px var(--Black);
+}
+
+.principal img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+.subrrayado {
+  max-width: fit-content;
+  background-color: hsl(47, 88%, 63%);
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  margin-bottom: 0;
+  margin-top: 2.6rem;
+}
+
+.text {
+  color: var(--Grey);
+  line-height: 2;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.avatar > img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.avatar_nombre {
+  font-weight: 800;
+}
